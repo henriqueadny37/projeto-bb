@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    height: 13vh;
+    width: 100vw;
+    font: normal 12pt Arial;
+    background-color: #f8d117;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menu ul{
+    list-style: none;
+    margin-top: 2px;
+}
+.menu ul li {
+    cursor: pointer;
+    background-color: #f8d117;
+    color: #204987;
+    width: 170px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.menu ul li:hover{
+    border-radius: 5px;
+    text-decoration: underline;
+}
+.menu ul ul{
+    display: none;
+    margin: 0;
+}
+.menu ul li:hover > ul{
+    display: block;
+}
+.menu ul ul ul{
+    margin-left: 170px;
+    top: 0px;
+    position: absolute;
+}
+#local{
+    background-color: #f8d117;
+    padding: 8px;
+    color: #204987;
+    border-radius: 5px;
+    border-color: #204987;
+    cursor: pointer;
+    
+}
+#btn{
+    padding: 15px;
+    color: #fff;
+    background-color: #204987;
+    border: none;
+    border-radius: 5px;
+    margin-left: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15%;
+}
+#btn > img{
+   margin-left: -8px;
+   margin-bottom: -18px;
+   padding: -10px;
+    
+}
+#btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+#cky{
+    color: rgb(10, 10, 152);
+}
+#ckyl{
+    color: #204987;
+    font-family:sans-serif;
+    padding-top: 15%;
+}
+h3{
+    text-align: left;
+    margin-left: 3%;
+    font: normal 12pt Arial;
+    padding: 13px;
+    font-weight: 500;
+    color: gray;
+    
+}
+#but{
+    color: rgb(133, 129, 129);
+}
+header{
+    background-color: rgb(240, 238, 238);
+    width: 100vw;
+}
+main{
+    background: url(imagens/banco-bb.jpg);
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+}
+nav{
+    height: 18vh;
+    width: 60vw;
+    font: normal 11pt Arial;
+    background-color: #204987;
+    display: flex;
+    margin-left: 19%;
+    border-radius: 5px;
+}
+
+
+nav a{
+    padding: 10px;
+    margin-left: 35px;
+    padding-top: 50px;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+nav a:hover{
+    background-color: rgb(31, 31, 119);
+    transition: 0.5s;
+    color: #F2A71B;
+}
+img{
+    display: block;
+    margin: auto;
+}
+#buck{
+    display: flex;
+    
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#buck > div{
+    flex: 1 1 200px;
+    
+    
+}
+#orang{
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 5px 11px rgb(201, 201, 201);
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+    height: 25vh;
+    width: 15vw;
+    margin-left: 12%;
+    cursor: pointer;
+    margin-bottom: 25%;
+}
+#lemon{
+    margin: 1px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.imgj{
+    background-color: rgb(231, 230, 230);
+    padding: 20px;
+    width: 100%;
+}
+footer{
+    background-color: #204987;
+    padding: 50px 0;
+}
+.full{
+    max-width: 1400px;
+    padding: 0 4px;
+    margin: auto;
+}
+.full-hd{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1{
+    margin-right: auto;
+}
+.col-1 > ul > li > img{
+    margin-left: -15px;
+    margin-bottom: -10px ;
+}
+footer ul{
+    list-style: none;
+    padding-right: 180px;
+}
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: 800;
+}
+footer h4{
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    position: relative;
+    
+}
+#footercontact{
+    background-color: #f8d117;
+    height: 30vh;
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 4px;
+}
+#cooler ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#grid ul li{
+    margin: auto;
+    list-style: none;
+    padding: 15px;
+}
+#grid li{
+    color: #204987;
+    font-family: sans-serif;
+}
+.fim{
+    background-color: rgb(240, 238, 238);
+    color: rgb(53, 53, 53);
+    font-family: sans-serif;
+    font-size: small;
+    padding: 10px;
+}
+
+.fim > a{
+    text-decoration: none;
+    align-items: unset;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+    header #cky {
+        margin-left: -65px;
+    }
+
+}
+@media only screen and (max-width: 630px) {
+    .menu ul li{
+        width: 100%;
+        display: none;
+    }
+    body {
+        margin: 0 auto;
+    }
+    main {
+        min-width: auto;
+        background: url(imagens/copia-bb_mpe_03.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+    .menu > #local {
+        width: 25vw;
+        margin-left: -40%;
+    }
+   .menu > #btn {
+       width: 40vw;
+       margin-right: 50%;
+   }
+   .sect {
+       display: flex;
+       float: inline-start;
+       height: 75vh;
+       margin: 0px;
+       background-color: #204987;
+   }
+   .sect > nav {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+    background-color: #204987;
+    
+   }
+   .sect > nav:hover{
+    background-color: rgb(31, 31, 119);
+   }
+   .sect > nav a {
+       text-align: center;
+       font-size: 15pt;
+       
+   }
+   /* a section abaixo 295 não faz parte da section 72 em HTML,e nem da #buck css/html*/
+   
+   #buck {
+       flex-direction: column;
+       flex-wrap: wrap;
+       margin-top: 80%;
+       padding: 0;
+       width: 100%;
+       
+   }
+    #lemon {
+        width: 90%;
+        height: auto;
+       display: flex;
+       flex-wrap: wrap;
+       padding: 10px;
+       margin: auto;
+   }
+   #orang {
+       width: 89%;
+       height: 40vh;
+       margin-left: 6%;
+       padding-top: 5px;
+       align-items: center;
+       background-color: #fff;
+       box-shadow: 0px 5px 11px rgb(74, 74, 74);
+   }
+   #ckyl {
+       font-size: 1.6em;
+   }
+   #but {
+    display: none;
+   }
+   header p {
+    display: none;
+   }
+   .imgj {
+       margin: 0;
+       padding: 0;
+   }
+   .imgj > img {
+    width: 95%;
+    height: 50%;
+    margin-left: 3%;
+    padding-right: +15%;
+   }
+   .eith > .tre {
+       width: 100%;
+       height: 35%;
+   }
+   footer {
+     display: none;
+   }
+  #footercontact {
+      height: 35vh;
+      padding: 10px;
+      margin: 0%;
+  }
+}
